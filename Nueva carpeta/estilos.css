@@ -1,0 +1,752 @@
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+h1, h2, p {
+    margin: 0.5rem 0;
+}
+
+/* Contenido del evento */
+.cont-evento {
+    margin-top: 20vh;
+}
+
+.Evento {
+    color: #ff6600;
+    font-size: 3.5rem;
+}
+
+.conteligiendo {
+    margin-top: 10vh;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Primera sección */
+.intro-section {
+    background-color: #000000;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    display: flex; /* Habilita el sistema de diseño flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    flex-direction: column;
+ 
+}
+
+.highlight-background {
+    position: fixed;
+    z-index: 13; /* Asegúrate de que sea mayor que otros elementos */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: #ff6600;
+    padding: 1rem;
+    color: #000000;
+    height: 12vh;
+    
+}
+
+.highlight-background h1.highlight {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.intro-content {
+    height: 100vh;
+    text-align: center; /* Asegura que el texto esté centrado dentro del contenedor */
+    max-width: 800px; /* Define un ancho máximo para evitar que el contenido sea demasiado amplio */
+    margin: 0 auto; /* Centrado horizontal adicional para navegadores más antiguos */
+    padding: 1rem; /* Espaciado interno opcional */
+}
+
+
+
+
+.pyd {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    color: black;
+    min-height: 3vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.intro-content h1 {
+    font-size: 3.5rem;
+    
+}
+
+.intro-content p {
+    font-size: 2rem;
+}
+
+.adquiri{
+    text-decoration: underline;
+    margin-top: 5rem;
+}
+
+p.adquiri{
+    font-size: 2rem;
+}
+
+.intro-content .eligiendo {
+    margin-top: 5rem;
+    color: #ff6600;
+    font-size: 1.5rem;
+}
+
+.intro-content h2 {
+    font-size: 1.4rem;
+}
+
+.intro-content button {
+    margin-top: 1.5rem;
+}
+
+/* Segunda sección */
+.gym-section {
+    background-color: #000000;
+    text-align: center; /* Solo para texto, no afecta los contenedores flex */
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gym-content {
+    max-width: 100vw;
+    margin: 0 auto; /* Centra horizontalmente */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos dentro del contenedor */
+}
+
+.contimg {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la imagen dentro del contenedor */
+    align-items: center; /* Centra verticalmente la imagen dentro del contenedor */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.gym-image {
+    width: 100%; /* Deja que se ajuste automáticamente */
+    max-width: 100%; /* Evita que sobrepase el contenedor */
+    max-height: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: contain; /* Asegura que la imagen no se distorsione */
+}
+.container-boton {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    width: 100%;
+}
+
+.button {
+    display: inline-block; /* Asegura que el botón respete su tamaño */
+    background: linear-gradient(to right, #ffffff, #ff6600, #ffffff); /* Degradado */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 2rem; /* Tamaño de fuente */
+    padding: 1rem 3rem; /* Aumenta el padding para hacer el botón más grande */
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto; /* Centrado vertical y horizontal */
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+    width: auto; /* Asegura que el ancho del botón se ajuste al contenido */
+    min-width: 250px; /* Establece un tamaño mínimo para el botón */
+    z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
+        position: relative; /* Necesario para que el z-index funcione */
+}
+
+.button:hover {
+    transform: scale(1.05); /* Efecto de escala en hover */
+    background: linear-gradient(to right, #ff6600, #ffffff, #ff6600); /* Cambia el degradado al pasar el mouse */
+}
+
+
+.contcfc {
+    margin-bottom: 50px;
+    margin-top: -30vh;
+    
+}
+
+.cfc {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff6600;
+}
+
+.cfc-color {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.pyd {
+    z-index: 13; /* Asegúrate de que sea mayor que otros elementos */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    color: black;
+    min-height: 3vh;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.pyd2 {
+    color: #ff6600;
+    font-size: 1.5rem;
+}
+
+.highlight{
+color: #000100;
+font-family: "Montserrat", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+/* CSS para el popup */
+.popup-overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 15; /* Asegúrate de que sea mayor que otros elementos */
+    position: relative;
+}
+
+.popup-content {
+    background: #010101;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    border: #ff6600 1px solid;
+    
+}
+
+.popup-button {
+    background: green;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px!important;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+
+.tituloboton{
+    color: #ff6600;
+}
+form input{
+    font-size: 1rem;
+}
+
+
+
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button {
+    animation: fadeIn 1s ease-in-out;
+}
+@media (min-width: 1920px) {
+    /* Ajuste para que las líneas alrededor del botón sean más largas */
+    .container-boton {
+        margin-top: 4rem; /* Aumentamos el espacio superior */
+    }
+
+   
+
+    /* Ajuste para el botón, hacerlo más grande y más abajo */
+    .button {
+        font-size: 2.5rem; /* Aumentamos el tamaño del texto */
+        padding: 1.5rem 3rem; /* Aumentamos el tamaño del botón */
+        width: auto; /* Ajustamos el tamaño del botón sin hacerlo full-width */
+        margin-top: 2rem; /* Añadimos un margen superior para moverlo hacia abajo */
+        z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
+        position: relative; /* Necesario para que el z-index funcione */
+    }
+
+    /* Ajuste para la introducción, hacer los elementos más grandes */
+    .intro-content h1 {
+        font-size: 5rem; /* Aumentamos el tamaño del título */
+    }
+
+    .intro-content p {
+        font-size: 2.5rem; /* Aumentamos el tamaño del subtítulo */
+    }
+
+    .intro-content .eligiendo {
+        font-size: 2rem; /* Hacemos el texto secundario más grande */
+    }
+
+    /* Si es necesario, también se puede hacer que las imágenes sean más grandes */
+    .gym-image {
+        width: 90%; /* Hacemos que la imagen ocupe un poco más de espacio */
+        height: auto;
+    }
+    .cfc,.cfc-color{
+    font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container-boton {
+        margin-top: 2rem; /* Ajusta el margen superior */
+    }
+
+    .button {
+        font-size: 2rem; /* Ajusta el tamaño del texto del botón */
+        padding: 1rem 2rem; /* Ajusta el tamaño del padding */
+        z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
+        position: relative; /* Necesario para que el z-index funcione */
+    }
+}
+
+@media (max-width: 720px) {
+    /* Ajustes generales */
+    .intro-content {
+        padding: 0rem; /* Reduce el padding total */
+        height: 100vh; /* Mantener visible todo en la pantalla */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra verticalmente los elementos */
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem; /* Espaciado moderado entre los elementos */
+    }
+
+    /* Título principal */
+    .intro-content h1 {
+        padding: 0rem; /* Reduce el padding total */
+        font-size:3.7rem; /* Incrementa el tamaño del texto */
+        line-height: 1.2; /* Espaciado adecuado entre líneas */
+        margin-bottom: 1rem; /* Margen inferior moderado */
+    }
+
+    /* Subtítulo */
+    .intro-content p.adquiri{
+        font-size: 2.9rem; /* Tamaño de fuente más grande */
+        line-height: 1.5; /* Espaciado más amplio */
+        margin: 1rem 0; /* Margen superior/inferior adecuado */
+    }
+
+   
+    .intro-content .eligiendo {
+        font-size: 2.4rem; /* Texto más grande para mejor visibilidad */
+        margin: 0.5rem 0 1rem 0; /* Ajustar el espacio superior/inferior */
+    }
+
+    
+
+
+  
+    .button {
+       
+        font-size: 2rem; /* Incrementa el tamaño del texto del botón */
+        padding: 1rem 2rem; /* Botón más cómodo para tocar */
+        z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
+        position: relative; /* Necesario para que el z-index funcione */
+    }
+
+    /* Líneas decorativas alrededor del botón */
+   
+  
+
+
+.highlight-background{
+
+    text-align: center;
+    margin-left: -13px;
+    height: 12vh;
+}
+.Evento{
+    font-size: 6rem;
+    
+
+}
+
+.cont-evento{margin-top: 0;
+    padding-bottom: 9vh;
+  
+}
+.contadquiri{
+margin-top: -6vh;
+margin-bottom: 5vh;
+}
+.conteligiendo{
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    
+}
+.cfc,.cfc-color {
+    font-size: 6rem;
+    margin: 0; /* Elimina márgenes innecesarios */
+}
+.contcfc{
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+}
+.contimg{
+    padding-bottom: 10vh;
+}
+.container-boton {
+    margin-top: 1rem; /* Espacio más cercano al texto */
+}
+
+.button {
+    font-size: 1.6rem; /* Botón más compacto */
+    width: 70%;
+    height: 5vh;
+    padding: 1rem 1.5rem; /* Reduce tamaño del botón */
+    z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
+        position: relative; /* Necesario para que el z-index funcione */
+}
+
+.intro-content {
+ 
+    margin-bottom: -1px; /* Elimina cualquier posible espacio residual */
+    width: 100%;
+} .gym-section{
+    
+    margin-top: -1px; /* Elimina cualquier espacio superior inesperado */
+    
+}  
+
+.popup-overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popup-content {
+ height: 520px;
+ max-height: 90%;
+    max-width: 600px;
+    width: 90%;
+    border: #ff6600 1px solid;
+    font-size: 2.2rem;
+}
+.popup-button {
+    background: green;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 530px;
+    height: 70px;
+    font-size: 2rem;
+    
+}
+
+
+.tituloboton{
+    color: #ff6600;
+    font-size: 3.5rem;
+}
+form input{
+    font-size: 2.7rem;
+}
+ }
+
+
+@media (max-width: 667px) {
+    .container-boton {
+        margin-top: 1rem; /* Reduce el espacio antes del botón */
+    }
+
+    .button {
+        font-size: 1.8rem; /* Ajusta el tamaño del botón */
+        padding: 1rem 1.8rem; /* Ajusta el padding */
+        z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
+        position: relative; /* Necesario para que el z-index funcione */
+    }
+   
+
+
+@media (max-width: 480px) {
+    /* Ajustes generales */
+    .intro-content {
+        padding: 0rem; /* Reduce el padding total */
+        
+        justify-content: flex-start; /* Alinea todo hacia arriba */
+        
+        gap: 0.5rem; /* Espacio más reducido entre los elementos */
+    }
+
+    /* Título principal */
+    .intro-content h1 {
+        font-size: 2.15rem; /* Tamaño más pequeño */
+        line-height: 1.2;  /* Espaciado reducido entre líneas */
+        margin-bottom: 1rem; /* Reduce el margen inferior */
+    
+    }
+
+    /* Subtítulo */
+    .intro-content p.adquiri{
+        font-size: 1.4rem; /* Tamaño más pequeño */
+        line-height: 1.2;
+        margin: 0.5rem 0; /* Reduce márgenes superior e inferior */
+    }
+
+    /* Texto secundario */
+    .intro-content .eligiendo {
+        font-size: 1.2rem;
+        margin: 0.6rem 0 1.1rem 0; /* Reduce márgenes y deja algo de espacio inferior */
+    }
+
+    /* Botón */
+    .button {
+        font-size: 1rem; /* Botón más compacto */
+        padding: 0.7rem 0.9rem; /* Reduce tamaño del botón */
+        z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
+        position: relative; /* Necesario para que el z-index funcione */
+    }
+
+    .container-boton {
+        margin-top: 0; /* Reduce el margen */
+        
+    }
+    .Evento{
+        font-size: 2.5rem;
+       
+    }
+    .highlight-background{
+
+        text-align: center;
+        margin-left: -13px;
+        height: 18vh;
+    }
+
+ 
+    .cont-evento {
+        margin-top: 10vh;
+         padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+   
+    .conteligiendo{
+        margin-top: 8vh;
+        margin-bottom: 7vh;
+       
+
+    }
+    
+      .contcfc {
+        margin-bottom: -10px;
+        margin-top: -30vh;
+        
+    }
+   
+    .contadquiri{
+
+        margin-bottom: -4vh;
+        margin-top: -4vh;
+    }
+  
+    .cfc,.cfc-color {
+        font-size: 2rem;
+       
+    }
+    .popup-content {
+
+        max-width: 300px;
+        width: 70%;
+        height: 70%;
+        max-height: 310px;
+        font-size: 1.1rem;
+    }
+    .tituloboton{
+        color: #ff6600;
+        font-size: 1.7rem;
+    }
+    form input{
+        font-size: 1.2rem;
+    }
+    
+   .popup-button {
+       background: green;
+       color: rgb(255, 255, 255);
+       border: none;
+       padding: 10px 20px;
+       border-radius: 5px;
+       cursor: pointer;
+       margin-top: 10px;
+       width: 240px;
+       height: 40px;
+       font-size: 0.9rem!important;
+       
+       
+   }
+    
+}
+@media (max-width: 365px) {
+    /* Ajustes generales */
+    .intro-content {
+        padding: 0.5rem; /* Reduce el padding total */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Alinea todo hacia arriba */
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem; /* Espacio más reducido entre los elementos */
+    }
+
+    /* Título principal */
+    .intro-content h1 {
+        font-size: 2.1rem; /* Tamaño de fuente más pequeño */
+        line-height: 1.1;  /* Reduce el espaciado entre líneas */
+        margin-bottom: 0.5rem; /* Menor margen inferior */
+        margin-top: -1vh;
+       
+    }
+    .highlight-background{
+
+        text-align: center;
+        margin-left: -13px;
+        height: 15vh;
+    }
+
+
+    /* Subtítulo */
+    .intro-content p.adquiri{
+        font-size: 1.35rem; /* Reduce el tamaño del texto */
+        line-height: 1.2; /* Compacta las líneas */
+        margin: 0.3rem 0; /* Margen superior/inferior mínimo */
+    }
+
+    /* Texto secundario */
+    .intro-content .eligiendo {
+        font-size: 1.1rem; /* Texto más pequeño */
+        margin: 0.3rem 0 0.8rem 0; /* Espacio reducido */
+    }
+
+    /* Contenedor del botón */
+    .container-boton {
+        margin-top: 1rem; /* Espacio más cercano al texto */
+        margin-bottom: 1rem; /* Espacio más cercano al texto */
+    }
+
+    .button {
+        font-size: 1rem; /* Botón más compacto */
+        padding: 0.7rem 0.9rem; /* Reduce tamaño del botón */
+       
+        z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
+        position: relative; /* Necesario para que el z-index funcione */
+          
+          
+    }
+
+.contadquiri{
+    margin-top: -4vh;
+    margin-bottom: -4vh;
+}
+   
+    .conteligiendo {
+        margin-top: 10vh;
+        margin-bottom: 0;
+    }
+
+  .cont-evento{
+    padding-top: 4vh;
+    padding-bottom: 7vh;
+  }
+  .contcfc {
+    margin-bottom: -10px;
+    margin-top: -40vh;
+    
+}
+  .Evento{
+    font-size: 2.5rem;
+  }
+  .contimg{
+    padding-bottom: 5vh;
+  }
+  .cfc,.cfc-color {
+    font-size: 2rem;
+   
+}
+
+.popup-content {
+
+    max-width: 300px;
+    width: 70%;
+    height: 70%;
+    max-height: 310px;
+    font-size: 1.1rem;
+}
+.tituloboton{
+    color: #ff6600;
+    font-size: 1.6rem;
+}
+form input{
+    font-size: 1.2rem;
+}
+
+.popup-button {
+   background: green;
+   color: rgb(255, 255, 255);
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 10px;
+   width: 240px;
+   height: 40px;
+   font-size: 0.9rem!important;
+   
+   
+}
+
+
+  }
