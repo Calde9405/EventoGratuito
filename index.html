@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&D Gimnasio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Primera sección -->
+    <section class="intro-section">
+        <div class="intro-content">
+            <div class="highlight-background">
+                <h1>
+                    <span class="highlight">Un</span> Sistema <span class="highlight">de</span> atracción y retención <span class="highlight">de</span> 
+                    alumnos
+                 </h1> 
+
+            </div>
+            <div class="cont-evento"><h2><span class="Evento">Evento Online ¡GRATUITO!</span></h2></div>
+            <div class="contadquiri"><p class="adquiri">
+                Adquirí en tu <b>gimnasio o espacio de entrenamiento</b><br>  
+                de <b>15 a 45 alumnos nuevos todos los meses</b>
+            </p></div>
+            <div class="conteligiendo"><p class="eligiendo"><i>Eligiendo <b>ejercer o delegar tu rol como entrenador</b></i></p></div>
+            <!-- Segundo botón debajo de "Eligiendo ejercer" -->
+            <div class="container-boton">
+                <button class="button" onclick="openModal()">Reservar</button>
+                               
+            </div>        
+    </section>
+    <div class="pyd">
+        P<samp class="pyd2">&</samp>D
+    </div>
+    <!-- Segunda sección -->
+    <section class="gym-section">
+        <div class="gym-content">
+            <div class="contcfc"><h1><span class="cfc"> <span class="cfc-color">Mi gimnasio</span> <b>CFC GYM</b></span></h1></div>
+            <div class="contimg"><img src="34.jpg" alt="Gimnasio CFC" class="gym-image"></div>
+            <div class="container-boton">
+                
+                <button class="button" onclick="openModal()">Reservar</button>
+                
+               
+            </div>
+        </div>
+    </section>
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2><span class="tituloboton">EVENTO GRATUITO</span> para entrenadores</h2> 
+
+            <form id="registrationForm">
+                <input type="text" id="name" placeholder="Nombre" required>
+                <button class="popup-button" type="button" onclick="redirectToWhatsApp()">Unirme al grupo de WhatsApp</button>
+            </form>
+            <p>¡Reserva tu plaza! Uniéndote al grupo de WhatsApp</p>
+<p><u>Adquiri en tu <b>gimnasio o espacio de entrenamiento</b> de <b>15 a 45 alumnos nuevos todos los meses</b></u></p>
+            
+    <div id="confirmation" style="display: none;">
+        <h2>¡Registro exitoso!</h2>
+        <p>Redirigiendo al grupo de WhatsApp...</p>
+    </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
