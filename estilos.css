@@ -5,6 +5,8 @@ body, html {
     font-family: 'Arial', sans-serif;
     scroll-behavior: smooth;
     color: white;
+    height: 100%;
+    
 }
 
 h1, h2, p {
@@ -343,7 +345,10 @@ form input{
         position: relative; /* Necesario para que el z-index funcione */
     }
 }
-
+@media (max-width: 1080px){
+}
+ @media (max-width: 768px){
+}
 @media (max-width: 720px) {
     /* Ajustes generales */
     .intro-content {
@@ -512,7 +517,7 @@ form input{
         position: relative; /* Necesario para que el z-index funcione */
     }
    
-
+  }
 
 @media (max-width: 480px) {
     /* Ajustes generales */
@@ -630,10 +635,96 @@ form input{
    }
     
 }
-@media (max-width: 365px) {
+@media (max-width: 414px){
+
+
+    @media (max-width: 414px) {
+        .intro-content {
+            padding: 0rem;
+            height: auto; /* Ajustar altura si no necesitas el 100% de la pantalla */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1rem; /* Espaciado entre elementos */
+        }
+    
+        .intro-content h1 {
+            font-size: 2.8rem; /* Ajusta el tamaño del texto */
+            line-height: 1.2;
+            margin-bottom: 0.8rem;
+        }
+    
+        .intro-content p.adquiri {
+            font-size: 2rem; /* Tamaño más pequeño */
+            line-height: 1.4;
+            margin: 1rem 0;
+        }
+    
+    
+    
+        .gym-image {
+            width: 100%; /* Imagen ajustada al ancho */
+            max-width: 90%; /* Evita desbordamiento */
+            border-radius: 8px;
+        }
+    
+        .highlight-background {
+            height: 10vh; /* Ajustar la altura del fondo superior */
+            font-size: 1rem; /* Ajustar tamaño del texto */
+        }
+    }
+    
+    .highlight-background{
+       margin-left: -16px;
+       height: 23vh;
+       margin-top: -20px;
+       position: fixed; /* Fija el contenedor */
+       top: 0; /* Posición en la parte superior */
+       left: 0;  
+       z-index: 9999;
+      
+    }
+    
+    .cont-evento{
+        width: 60vh;
+    }
+
+     }
+.Evento{
+        font-size: 3.6rem;
+      }
+   .contadquiri{
+    width: 45vh;
+   }
+      .adquiri{
+        font-size: 2rem!important;
+      }
+      .eligiendo{
+
+        
+      }
+@media (max-width: 375px){
+
+    .contcfc{
+        padding-top: 10vh;
+    }
+    .contadquiri{
+        padding-top: 3vh;
+    }
+    .conteligiendo{
+
+       margin-bottom: 1vh;
+    }
+    .cont-evento{
+        padding-top: 8vh;
+    }
+}
+@media (max-width: 360px) {
     /* Ajustes generales */
     .intro-content {
-        padding: 0.5rem; /* Reduce el padding total */
+        /* Reduce el padding total */
         display: flex;
         flex-direction: column;
         justify-content: flex-start; /* Alinea todo hacia arriba */
@@ -680,7 +771,9 @@ form input{
     .button {
         font-size: 1rem; /* Botón más compacto */
         padding: 0.7rem 0.9rem; /* Reduce tamaño del botón */
-       
+        
+            height: 6vh;
+           
         z-index: 10; /* Asegúrate de que sea mayor que otros elementos */
         position: relative; /* Necesario para que el z-index funcione */
           
@@ -750,3 +843,66 @@ form input{
 
 
   }
+@media (max-width: 320px){
+
+    .intro-content h1 {
+        font-size: 1.8rem; /* Tamaño de fuente más pequeño */
+     
+       
+    }
+.Evento{
+        font-size: 2rem;
+      }
+ .intro-content p.adquiri{
+        font-size: 1.2rem; /* Reduce el tamaño del texto */
+    
+    }
+
+    .intro-content .eligiendo {
+        font-size: 0.8rem; /* Texto más pequeño */
+    
+    }
+   
+    .conteligiendo{
+        margin-top: 5vh;
+        
+    }
+    .cont-evento{
+        padding-top: 3vh;
+      padding-bottom: 4vh;
+    }
+   .gym-section{
+    padding-top:0;
+   }
+   .contcfc{
+
+    padding-bottom: 5vh;
+   }
+   .button{
+    height: 7vh;
+   }
+   .container-boton{
+    margin-bottom: 0;
+    margin-top: 0px;
+   }
+   .popup-content {
+    height: 65%;
+    max-height:90%;
+    padding-top: 0;
+    max-width: 350px;
+    width: 85%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+.tituloboton {
+    
+    font-size: 1.7rem;
+}
+.popup-content h2{
+
+    width: 100%;
+    
+}
+}
+  
