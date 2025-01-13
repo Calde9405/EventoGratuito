@@ -93,6 +93,9 @@ h1, h2, p {
 
 .intro-content h1 {
     font-size: 3.5rem;
+    font-family: "Indie Flower", serif;
+    font-weight: 800;
+    font-style: normal;
     
 }
 
